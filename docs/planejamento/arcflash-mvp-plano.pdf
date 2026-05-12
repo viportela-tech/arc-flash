@@ -1,0 +1,375 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 2812 >>
+stream
+BT
+/F1 10 Tf
+/F1 16 Tf
+1 0 0 1 56 790 Tm
+(Plano De Execucao Atualizado: SaaS Arc Flash Com PDF Do Plano E) Tj
+/F1 10 Tf
+1 0 0 1 56 772 Tm
+(Controle De Uso Codex) Tj
+/F1 13 Tf
+1 0 0 1 56 744 Tm
+(Summary) Tj
+/F1 10 Tf
+1 0 0 1 56 712 Tm
+(Criar um MVP comercial web para calculo de arc flash, comecando em VM Linux local com) Tj
+/F1 10 Tf
+1 0 0 1 56 698 Tm
+(Docker, depois staging com Supabase Free e producao/beta com Supabase Pro.) Tj
+/F1 10 Tf
+1 0 0 1 56 670 Tm
+(Antes da implementacao tecnica, gerar dentro do repositorio:) Tj
+/F1 10 Tf
+1 0 0 1 56 642 Tm
+(* `docs/planejamento/arcflash-mvp-plano.md`) Tj
+/F1 10 Tf
+1 0 0 1 56 628 Tm
+(* `docs/planejamento/arcflash-mvp-plano.pdf`) Tj
+/F1 10 Tf
+1 0 0 1 56 614 Tm
+(* `docs/planejamento/codex-usage-log.md`) Tj
+/F1 10 Tf
+1 0 0 1 56 586 Tm
+(A ferramenta sera apoio tecnico para estudos de arc flash, com validacao final por) Tj
+/F1 10 Tf
+1 0 0 1 56 572 Tm
+(engenheiro habilitado.) Tj
+/F1 13 Tf
+1 0 0 1 56 544 Tm
+(Fase 0: Preparacao Do Ambiente Local) Tj
+/F1 10 Tf
+1 0 0 1 56 512 Tm
+(Ambiente atual:) Tj
+/F1 10 Tf
+1 0 0 1 56 484 Tm
+(* VirtualBox Linux.) Tj
+/F1 10 Tf
+1 0 0 1 56 470 Tm
+(* 4 vCPUs.) Tj
+/F1 10 Tf
+1 0 0 1 56 456 Tm
+(* 16 GB RAM.) Tj
+/F1 10 Tf
+1 0 0 1 56 442 Tm
+(* 60 GB disco.) Tj
+/F1 10 Tf
+1 0 0 1 56 428 Tm
+(* VS Code, Docker, Portainer e Codex Plus configurados.) Tj
+/F1 10 Tf
+1 0 0 1 56 400 Tm
+(Primeiras tarefas da execucao:) Tj
+/F1 10 Tf
+1 0 0 1 56 372 Tm
+(* Criar estrutura de documentacao do projeto.) Tj
+/F1 10 Tf
+1 0 0 1 56 358 Tm
+(* Salvar este plano em Markdown.) Tj
+/F1 10 Tf
+1 0 0 1 56 344 Tm
+(* Gerar PDF A4 simples do plano, preferencialmente via container com `pandoc` ou ferramenta) Tj
+/F1 10 Tf
+1 0 0 1 56 330 Tm
+(equivalente, sem instalar dependencias globais desnecessarias.) Tj
+/F1 10 Tf
+1 0 0 1 56 316 Tm
+(* Criar `.gitignore` protegendo:) Tj
+/F1 10 Tf
+1 0 0 1 56 302 Tm
+(* `referencias/normas-local/`) Tj
+/F1 10 Tf
+1 0 0 1 56 288 Tm
+(* arquivos `.env`) Tj
+/F1 10 Tf
+1 0 0 1 56 274 Tm
+(* dumps locais) Tj
+/F1 10 Tf
+1 0 0 1 56 260 Tm
+(* volumes e caches.) Tj
+/F1 10 Tf
+1 0 0 1 56 246 Tm
+(* Criar `docs/planejamento/codex-usage-log.md` para controle manual por sessao.) Tj
+/F1 13 Tf
+1 0 0 1 56 218 Tm
+(Controle De Uso Do Codex Plus) Tj
+/F1 10 Tf
+1 0 0 1 56 186 Tm
+(A OpenAI informa que os limites do Codex variam por plano, tamanho da tarefa, complexidade,) Tj
+/F1 10 Tf
+1 0 0 1 56 172 Tm
+(duracao e contexto usado. Tambem ha limites por janela de 5 horas e limite semanal) Tj
+/F1 10 Tf
+1 0 0 1 56 158 Tm
+(compartilhado entre tarefas locais e cloud tasks.) Tj
+/F1 10 Tf
+1 0 0 1 56 130 Tm
+(Fonte: https://help.openai.com/en/articles/11369540) Tj
+/F1 10 Tf
+1 0 0 1 56 102 Tm
+(Como nao ha garantia de um contador local/API simples para a assinatura ChatGPT Pro, o MVP) Tj
+/F1 10 Tf
+1 0 0 1 56 88 Tm
+(do controle sera operacional:) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3160 >>
+stream
+BT
+/F1 10 Tf
+/F1 10 Tf
+1 0 0 1 56 790 Tm
+(* Registrar cada sessao Codex em `docs/planejamento/codex-usage-log.md`.) Tj
+/F1 10 Tf
+1 0 0 1 56 776 Tm
+(* Campos:) Tj
+/F1 10 Tf
+1 0 0 1 56 762 Tm
+(* data/hora;) Tj
+/F1 10 Tf
+1 0 0 1 56 748 Tm
+(* objetivo da sessao;) Tj
+/F1 10 Tf
+1 0 0 1 56 734 Tm
+(* arquivos tocados;) Tj
+/F1 10 Tf
+1 0 0 1 56 720 Tm
+(* modelo usado, se visivel;) Tj
+/F1 10 Tf
+1 0 0 1 56 706 Tm
+(* duracao;) Tj
+/F1 10 Tf
+1 0 0 1 56 692 Tm
+(* tipo de tarefa: planejamento, codigo, teste, revisao;) Tj
+/F1 10 Tf
+1 0 0 1 56 678 Tm
+(* resultado;) Tj
+/F1 10 Tf
+1 0 0 1 56 664 Tm
+(* observacao de limite, se aparecer aviso na interface.) Tj
+/F1 10 Tf
+1 0 0 1 56 650 Tm
+(* Trabalhar com blocos pequenos para reduzir contexto.) Tj
+/F1 10 Tf
+1 0 0 1 56 636 Tm
+(* Preferir tarefas locais no Codex para alteracoes pequenas.) Tj
+/F1 10 Tf
+1 0 0 1 56 622 Tm
+(* Usar subagentes apenas quando houver tarefas independentes.) Tj
+/F1 10 Tf
+1 0 0 1 56 608 Tm
+(* Evitar reenviar normas, PDFs, logs grandes ou arquivos irrelevantes.) Tj
+/F1 10 Tf
+1 0 0 1 56 594 Tm
+(* Fazer checkpoints: no maximo 1 bloco grande por sessao antes de revisar.) Tj
+/F1 13 Tf
+1 0 0 1 56 566 Tm
+(Fase 1: Infra Local Docker) Tj
+/F1 10 Tf
+1 0 0 1 56 534 Tm
+(* Criar Docker Compose com:) Tj
+/F1 10 Tf
+1 0 0 1 56 520 Tm
+(* `app`: Next.js/TypeScript.) Tj
+/F1 10 Tf
+1 0 0 1 56 506 Tm
+(* `db`: Postgres.) Tj
+/F1 10 Tf
+1 0 0 1 56 492 Tm
+(* `storage`: MinIO ou storage local.) Tj
+/F1 10 Tf
+1 0 0 1 56 478 Tm
+(* `mail`: Mailpit.) Tj
+/F1 10 Tf
+1 0 0 1 56 464 Tm
+(* `worker`: PDF, uploads e extracao assistida.) Tj
+/F1 10 Tf
+1 0 0 1 56 450 Tm
+(* Criar scripts:) Tj
+/F1 10 Tf
+1 0 0 1 56 436 Tm
+(* `make dev`) Tj
+/F1 10 Tf
+1 0 0 1 56 422 Tm
+(* `make test`) Tj
+/F1 10 Tf
+1 0 0 1 56 408 Tm
+(* `make db-migrate`) Tj
+/F1 10 Tf
+1 0 0 1 56 394 Tm
+(* `make db-reset`) Tj
+/F1 10 Tf
+1 0 0 1 56 380 Tm
+(* `make logs`) Tj
+/F1 10 Tf
+1 0 0 1 56 366 Tm
+(* `make docker-clean`) Tj
+/F1 10 Tf
+1 0 0 1 56 352 Tm
+(* Usar Postgres container no inicio.) Tj
+/F1 10 Tf
+1 0 0 1 56 338 Tm
+(* Introduzir Supabase local quando Auth, Storage e RLS forem implementados.) Tj
+/F1 13 Tf
+1 0 0 1 56 310 Tm
+(Fase 2: Staging Supabase Free) Tj
+/F1 10 Tf
+1 0 0 1 56 278 Tm
+(* Usar Supabase Free apenas para staging.) Tj
+/F1 10 Tf
+1 0 0 1 56 264 Tm
+(* Testar auth, RLS, storage, upload, download, relatorios e webhooks.) Tj
+/F1 10 Tf
+1 0 0 1 56 250 Tm
+(* Nao usar para clientes pagantes nem dados sensiveis reais.) Tj
+/F1 13 Tf
+1 0 0 1 56 222 Tm
+(Fase 3: Beta/Producao Supabase Pro) Tj
+/F1 10 Tf
+1 0 0 1 56 190 Tm
+(* Migrar para Supabase Pro antes de usuarios externos reais.) Tj
+/F1 10 Tf
+1 0 0 1 56 176 Tm
+(* Configurar dominio, backups, logs, monitoramento e chaves de producao.) Tj
+/F1 10 Tf
+1 0 0 1 56 162 Tm
+(* Usar Mercado Pago para cobranca.) Tj
+/F1 10 Tf
+1 0 0 1 56 148 Tm
+(* Usar OpenAI API apenas no recurso premium de extracao assistida de curvas.) Tj
+/F1 13 Tf
+1 0 0 1 56 120 Tm
+(Blocos De Produto) Tj
+/F1 10 Tf
+1 0 0 1 56 88 Tm
+(* Fundacao SaaS: login, usuarios, organizacoes, permissoes e dashboard.) Tj
+/F1 10 Tf
+1 0 0 1 56 74 Tm
+(* Modelo de dados: projetos, equipamentos, pontos de analise, curvas, anexos e relatorios.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2232 >>
+stream
+BT
+/F1 10 Tf
+/F1 10 Tf
+1 0 0 1 56 790 Tm
+(* Motor de calculo: biblioteca isolada, deterministica, versionada e testada.) Tj
+/F1 10 Tf
+1 0 0 1 56 776 Tm
+(* Estudos: formularios guiados, entrada manual de curvas e validacoes.) Tj
+/F1 10 Tf
+1 0 0 1 56 762 Tm
+(* Anexos: upload de imagens/PDFs, preservados na documentacao do projeto.) Tj
+/F1 10 Tf
+1 0 0 1 56 748 Tm
+(* IA premium: extracao assistida de curvas com confirmacao manual obrigatoria.) Tj
+/F1 10 Tf
+1 0 0 1 56 734 Tm
+(* Relatorios: PDF com memorial, entradas, resultados, anexos, versao do calculo e termo de) Tj
+/F1 10 Tf
+1 0 0 1 56 720 Tm
+(validacao.) Tj
+/F1 10 Tf
+1 0 0 1 56 706 Tm
+(* Comercializacao: planos teste, profissional e premium, com limites por projeto, storage,) Tj
+/F1 10 Tf
+1 0 0 1 56 692 Tm
+(relatorio e IA.) Tj
+/F1 13 Tf
+1 0 0 1 56 664 Tm
+(Test Plan) Tj
+/F1 10 Tf
+1 0 0 1 56 632 Tm
+(* Confirmar que o plano em Markdown e PDF foi gerado.) Tj
+/F1 10 Tf
+1 0 0 1 56 618 Tm
+(* Confirmar que arquivos sensiveis/normas locais estao ignorados pelo Git.) Tj
+/F1 10 Tf
+1 0 0 1 56 604 Tm
+(* Confirmar que Docker Compose sobe os servicos locais.) Tj
+/F1 10 Tf
+1 0 0 1 56 590 Tm
+(* Confirmar migrations em Postgres local e Supabase.) Tj
+/F1 10 Tf
+1 0 0 1 56 576 Tm
+(* Testar Auth, RLS e storage.) Tj
+/F1 10 Tf
+1 0 0 1 56 562 Tm
+(* Testar motor de calculo com casos aprovados por engenheiro.) Tj
+/F1 10 Tf
+1 0 0 1 56 548 Tm
+(* Testar geracao de relatorio PDF.) Tj
+/F1 10 Tf
+1 0 0 1 56 534 Tm
+(* Testar limites por plano.) Tj
+/F1 10 Tf
+1 0 0 1 56 520 Tm
+(* Testar extracao IA com confirmacao manual.) Tj
+/F1 13 Tf
+1 0 0 1 56 492 Tm
+(Assumptions) Tj
+/F1 10 Tf
+1 0 0 1 56 460 Tm
+(* PDF inicial sera simples, A4, sem identidade visual definitiva.) Tj
+/F1 10 Tf
+1 0 0 1 56 446 Tm
+(* Controle de uso Codex sera manual/operacional no inicio, porque os limites oficiais variam) Tj
+/F1 10 Tf
+1 0 0 1 56 432 Tm
+(conforme uso e contexto.) Tj
+/F1 10 Tf
+1 0 0 1 56 418 Tm
+(* Supabase Free sera staging, nao producao.) Tj
+/F1 10 Tf
+1 0 0 1 56 404 Tm
+(* Supabase Pro sera usado antes de clientes pagantes.) Tj
+/F1 10 Tf
+1 0 0 1 56 390 Tm
+(* O disco de 60 GB sera monitorado; ideal ampliar para 100-120 GB se o volume de) Tj
+/F1 10 Tf
+1 0 0 1 56 376 Tm
+(Docker/uploads crescer.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000003060 00000 n 
+0000003186 00000 n 
+0000006397 00000 n 
+0000006523 00000 n 
+0000008806 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+8932
+%%EOF

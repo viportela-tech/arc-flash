@@ -1,0 +1,11 @@
+{
+  "name": "arcflash-worker",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "test": "node src/index.js --check"
+  },
+  "dependencies": {}
+}

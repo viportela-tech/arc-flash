@@ -1,0 +1,92 @@
+services:
+  app:
+    build:
+      context: ./app
+    container_name: arcflash-app
+    command: npm run dev
+    depends_on:
+      db:
+        condition: service_healthy
+      storage:
+        condition: service_started
+      mail:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql://arcflash:arcflash_dev_password@db:5432/arcflash
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      STORAGE_ENDPOINT: http://storage:9000
+      STORAGE_BUCKET: arcflash-local
+      MAIL_HOST: mail
+      MAIL_PORT: "1025"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/workspace/app
+      - app_node_modules:/workspace/app/node_modules
+    working_dir: /workspace/app
+
+  worker:
+    build:
+      context: ./worker
+    container_name: arcflash-worker
+    command: npm run dev
+    depends_on:
+      db:
+        condition: service_healthy
+      storage:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql://arcflash:arcflash_dev_password@db:5432/arcflash
+      STORAGE_ENDPOINT: http://storage:9000
+      STORAGE_BUCKET: arcflash-local
+      WORKER_PORT: "4000"
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./worker:/workspace/worker
+      - worker_node_modules:/workspace/worker/node_modules
+    working_dir: /workspace/worker
+
+  db:
+    image: postgres:16-alpine
+    container_name: arcflash-db
+    environment:
+      POSTGRES_USER: arcflash
+      POSTGRES_PASSWORD: arcflash_dev_password
+      POSTGRES_DB: arcflash
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/postgres/migrations:/migrations:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U arcflash -d arcflash"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  storage:
+    image: minio/minio:latest
+    container_name: arcflash-storage
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: arcflash
+      MINIO_ROOT_PASSWORD: arcflash_dev_password
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  mail:
+    image: axllent/mailpit:latest
+    container_name: arcflash-mail
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+volumes:
+  app_node_modules:
+  worker_node_modules:
+  postgres_data:
+  minio_data:
